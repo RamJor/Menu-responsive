@@ -1,0 +1,38 @@
+:root {
+  --fonttitle: font-family: "Righteous", sans-serif;
+  --background-color: #a435f0;
+  --white: #ffffff;
+  --black: #000;
+}
+
+
+body {
+  font-size: 30px;
+}
+
+a,
+ul {
+  text-decoration: none;
+  list-style-type: none;
+  font-family: var(--fonttitle);
+  color: var(--white);
+}
+
+
+.menu {
+  background-color: var(--background-color);
+  padding: 10px;
+}
+
+.menu__container {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media(max-width: 390px) {
+   .menu__container{
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+   }
+}
